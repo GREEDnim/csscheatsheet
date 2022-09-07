@@ -1,0 +1,309 @@
+  a{text-decoration: none;
+color: white;}
+
+/* background-color-for-body */
+body
+{
+    animation : changebg 10s linear infinite  ;
+}
+
+@keyframes changebg {
+    0%
+    {
+         
+          background-color: rgb(194, 9, 9); 
+    }
+    50%
+    {
+        background-color: rgb(4, 4, 87);
+    }
+    100%
+    {
+        background-color: rgb(194, 9, 9); 
+    }
+}
+
+            /* header */
+
+.flex
+{
+    display:flex;
+    gap:2em;
+}
+
+.header p:nth-child(2)
+{
+    margin-left:auto;
+}
+.header p:nth-child(3)
+{
+    margin-right: 3em;
+}
+.logo
+{
+    margin-left:3em;
+    font-family: cursive;
+}
+.header p
+{
+    font-size: larger;
+    font-weight: bold;
+    color:lightcyan;
+    opacity: .5;
+}
+header{
+    position: sticky;
+    top:1em;
+    margin-top:1em;
+    background-color: rgba(0,0,0,.2);
+    border-radius: 25px 25px;
+    z-index: 10;
+   
+    
+}
+header p:hover
+ {
+    transform: scale(1.2);
+    opacity: 1;
+ }   
+
+
+.blur
+{
+    background-color: rgba(0,0,0,.2);
+    color: white;
+    opacity: .5;
+    padding: 2em;
+}
+h1
+{
+    text-align: center;
+    color: white;
+    opacity: .8;
+}
+h2
+{
+    
+    color: white;
+    opacity: .7;
+}
+.container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.center
+{
+    justify-content: center;
+    align-items: center;
+}
+.box
+{
+    width:100px;
+    height:100px;
+    background-color: rgba(0,0,0,.7);
+    color:white;
+    
+    
+}
+ .container:hover
+{
+    color:white;
+    background-color: rgba(0,0,0,.7);
+}
+.container:hover .box
+{
+    color:black;
+    background-color:white;
+    
+}
+.rotate .container:hover .box
+{
+    animation : rotate 1s linear forwards;   
+}
+@keyframes rotate {
+    100%
+    {
+        transform: rotate(120deg);
+    }
+    
+}
+.single-style
+{
+     background-color: rgba(255,255,255,.1); 
+}
+
+.rotateX .container:hover .box
+{
+    animation : rotatex 1s linear forwards;   
+}
+@keyframes rotatex {
+    100%
+    {
+        transform: rotateX(120deg);
+    }
+    
+}
+
+.rotateY .container:hover .box
+{
+    animation : rotatey 1s linear forwards;   
+}
+@keyframes rotatey {
+    100%
+    {
+        transform: rotateY(120deg);
+    }
+    
+}
+
+.scaleX .container:hover .box
+{
+    animation : scalex 1s linear forwards;   
+}
+@keyframes scalex {
+    100%
+    {
+        transform: scaleX(2);
+    }
+    
+}
+
+.scaleY .container:hover .box
+{
+    animation : scaley 1s linear forwards;   
+}
+@keyframes scaley {
+    100%
+    {
+        transform: scaleY(2);
+    }
+    
+}
+
+
+.skewX .container:hover .box
+{
+    animation : skewx 1s linear forwards;   
+}
+@keyframes skewx {
+    100%
+    {
+        transform: skewX(120deg);
+    }
+    
+}
+
+.skewY .container:hover .box
+{
+    animation : skewy 1s linear forwards;   
+}
+@keyframes skewy {
+    100%
+    {
+        transform: skewY(120deg);
+    }
+    
+}
+
+
+
+.translateX .container:hover .box
+{
+    animation : translatex 1s linear forwards;   
+}
+@keyframes translatex {
+    100%
+    {
+        transform: translateX(50%);
+    }
+    
+}
+
+.translateY .container:hover .box
+{
+    animation : translatey 1s linear forwards;   
+}
+@keyframes translatey {
+    100%
+    {
+        transform: translateY(50%);
+    }
+    
+}
+/* transitions */
+
+.transition1 .box
+{
+    width:100px;
+    height:100px;
+    transition : width 2s;
+}
+.transition1 .box:hover
+{
+    width:300px;
+}
+.transition2 .box
+{
+    width:100px;
+    height:100px;
+    transition : width 2s linear;
+}
+.transition2 .box:hover
+{
+    width:300px ;
+}
+.transition3 .box
+{
+    width:100px;
+    height:100px;
+    transition : width 2s ease;
+}
+.transition3 .box:hover
+{
+    width:300px ;
+}
+
+.transition4 .box
+{
+    width:100px;
+    height:100px;
+    transition : width 2s ease-in;
+}
+.transition4 .box:hover
+{
+    width:300px ;
+}
+.transition5 .box
+{
+    width:100px;
+    height:100px;
+    transition : width 2s ease-out;
+}
+.transition5 .box:hover
+{
+    width:300px ;
+}
+
+.transition6 .box
+{
+    width:100px;
+    height:100px;
+    transition : width 2s ease-in-out;
+}
+.transition6 .box:hover
+{
+    width:300px ;
+}
+
+.transition7 .box
+{
+    width:100px;
+    height:100px;
+    transition : width 2s cubic-bezier(0.1, 0.7, 1.0, 0.1);;
+}
+.transition7 .box:hover
+{
+    width:300px ;
+}

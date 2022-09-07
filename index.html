@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>SVCE?</title>
+    <link rel="shortcut icon" href="./svce_logo.jpg" type="image/x-icon">
+    <script src="./script.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="flex header">
+            <p class="logo">CHEET SHEET</p>
+            <p><a href="#transforms"> Transfroms</a></p>
+            <p><a href="#transitions"> Transitions</a></p>
+            
+        </nav>
+    </header>
+
+    <section id="transforms">
+        <h1>Transforms</h1>
+        <section>
+            <h2>1.rotate</h2>
+            <div class="single-style rotate">
+                    <p class="blur">rotate(angle) => Defines a 2D rotation, the angle is specified in the parameter. </p>
+                    <div class="container blur">
+                        <div>
+                            <code>.box <br> { <br> transform:rotate(120deg); <br> }</code>
+                        </div>
+                        <div class="box flex center">
+                            box
+                        </div>
+                    </div>      
+            </div>
+            <div class="single-style rotateX">
+                <p class="blur">rotateX(angle) => Defines a 3D rotation, the angle is specified in the parameter. </p>
+                <div class="container blur">
+                    <div>
+                        <code>.box <br> { <br> transform:rotateX(120deg); <br> }</code>
+                    </div>
+                    <div class="box flex center">
+                        box
+                    </div>
+                </div>      
+        </div>
+        <div class="single-style rotateY">
+            <p class="blur">rotateY(angle) => Defines a 3D rotation, the angle is specified in the parameter. </p>
+            <div class="container blur">
+                <div>
+                    <code>.box <br> { <br> transform:rotateY(120deg); <br> }</code>
+                </div>
+                <div class="box flex center">
+                    box
+                </div>
+            </div>      
+    </div>
+        </section>
+
+
+
+        <section>
+            <h2>2.scale</h2>
+            <div class="single-style scaleX">
+                    <p class="blur">scaleX(x)	Defines a scale transformation by giving a value for the X-axis </p>
+                    <div class="container blur">
+                        <div>
+                            <code>.box <br> { <br> transform:scaleX(2); <br> }</code>
+                        </div>
+                        <div class="box flex center">
+                            box
+                        </div>
+                    </div>      
+            </div>
+            <div class="single-style scaleY">
+                <p class="blur">scaleY(y)	Defines a scale transformation by giving a value for the Y-axis </p>
+                <div class="container blur">
+                    <div>
+                        <code>.box <br> { <br> transform:scaleY(2); <br> }</code>
+                    </div>
+                    <div class="box flex center">
+                        box
+                    </div>
+                </div>      
+        </div>
+        </section>
+
+
+        <section>
+            <h2>3.translate</h2>
+            <div class="single-style translateX">
+                    <p class="blur">translateX(x)	Defines a translation, using only the value for the X-axis </p>
+                    <div class="container blur">
+                        <div>
+                            <code>.box <br> { <br> transform:translateX(50%); <br> }</code>
+                        </div>
+                        <div class="box flex center">
+                            box
+                        </div>
+                    </div>      
+            </div>
+            <div class="single-style translateY">
+                <p class="blur">translateY(y)	Defines a translation, using only the value for the Y-axis </p>
+                <div class="container blur">
+                    <div>
+                        <code>.box <br> { <br> transform:translateY(50%); <br> }</code>
+                    </div>
+                    <div class="box flex center">
+                        box
+                    </div>
+                </div>      
+        </div>
+        </section>
+
+
+        <section>
+            <h2>4.skew</h2>
+            <div class="single-style skewX">
+                    <p class="blur">skewX(angle)	Defines a 2D skew transformation along the X-axis </p>
+                    <div class="container blur">
+                        <div>
+                            <code>.box <br> { <br> transform:skewX(120deg); <br> }</code>
+                        </div>
+                        <div class="box flex center">
+                            box
+                        </div>
+                    </div>      
+            </div>
+            <div class="single-style skewY">
+                <p class="blur">skewY(angle)    Defines a 2D skew transformation along the Y-axis  </p>
+                <div class="container blur">
+                    <div>
+                        <code>.box <br> { <br> transform:skewY(120deg); <br> }</code>
+                    </div>
+                    <div class="box flex center">
+                        box
+                    </div>
+                </div>      
+        </div>
+        </section>
+    </section>
+
+
+    <section id="transitions">
+        <h1>Transitions</h1>
+        <p class="blur">
+            syntax:- <br> transition:  transition-delay  transition-duration  transition-property  transition-timing-function;
+        </p>
+        <div class="transition1">
+        <div class="container blur ">
+            <div class="flex">
+                <code>.box <br> { <br> width:100px;
+                    <br>height:100px;
+                    <br>transition:width 2s; <br> }</code>
+                
+                <code>
+                box:hover<br>{ <br> 
+                width:300px;
+            <br>}</code>
+        </div>
+            <div class="box flex center">
+                box
+            </div>
+        </div>
+        </div>      
+
+        <div class="transition2">
+            <p class="blur">transition-timing-function: linear</p>
+            <div class="container blur ">
+                <div class="flex">
+                    <code>.box <br> { <br> width:100px;
+                        <br>height:100px;
+                        <br>transition:width 2s linear; <br> }</code>
+                    
+                    <code>
+                    box:hover<br>{ <br> 
+                    width:300px;
+                <br>}</code>
+            </div>
+                <div class="box flex center">
+                    box
+                </div>
+            </div>
+            </div>    
+            
+            
+            
+        <div class="transition3">
+            <p class="blur">transition-timing-function: ease</p>
+            <div class="container blur ">
+                <div class="flex">
+                    <code>.box <br> { <br> width:100px;
+                        <br>height:100px;
+                        <br>transition:width 2s ease; <br> }</code>
+                    
+                    <code>
+                    box:hover<br>{ <br> 
+                    width:300px;
+                <br>}</code>
+            </div>
+                <div class="box flex center">
+                    box
+                </div>
+            </div>
+            </div>    
+
+            <div class="transition4">
+                <p class="blur">transition-timing-function: ease-in</p>
+                <div class="container blur ">
+                    <div class="flex">
+                        <code>.box <br> { <br> width:100px;
+                            <br>height:100px;
+                            <br>transition:width 2s ease-in; <br> }</code>
+                        
+                        <code>
+                        box:hover<br>{ <br> 
+                        width:300px;
+                    <br>}</code>
+                </div>
+                    <div class="box flex center">
+                        box
+                    </div>
+                </div>
+                </div> 
+
+                <div class="transition5">
+                    <p class="blur">transition-timing-function: ease-out</p>
+                    <div class="container blur ">
+                        <div class="flex">
+                            <code>.box <br> { <br> width:100px;
+                                <br>height:100px;
+                                <br>transition:width 2s ease-out; <br> }</code>
+                            
+                            <code>
+                            box:hover<br>{ <br> 
+                            width:300px;
+                        <br>}</code>
+                    </div>
+                        <div class="box flex center">
+                            box
+                        </div>
+                    </div>
+                    </div> 
+
+                    <div class="transition6">
+                        <p class="blur">transition-timing-function: ease-in-out</p>
+                        <div class="container blur ">
+                            <div class="flex">
+                                <code>.box <br> { <br> width:100px;
+                                    <br>height:100px;
+                                    <br>transition:width 2s ease-in-out; <br> }</code>
+                                
+                                <code>
+                                box:hover<br>{ <br> 
+                                width:300px;
+                            <br>}</code>
+                        </div>
+                            <div class="box flex center">
+                                box
+                            </div>
+                        </div>
+                        </div> 
+
+                        <div class="transition7">
+                            <p class="blur">transition-timing-function: cubic bezier()</p>
+                            <div class="container blur ">
+                                <div class="flex">
+                                    <code>.box <br> { <br> width:100px;
+                                        <br>height:100px;
+                                        <br>transition:width 2s cubic-bezier(0.1, 0.7, 1.0, 0.1); <br> }</code>
+                                    
+                                    <code>
+                                    box:hover<br>{ <br> 
+                                    width:300px;
+                                <br>}</code>
+                            </div>
+                                <div class="box flex center">
+                                    box
+                                </div>
+                            </div>
+                            </div> 
+
+    </section>
+
+<footer>
+   <div class="flex center"><h1>gg wp</h1></div>
+       
+</footer>
+
+</body>
+</html>
